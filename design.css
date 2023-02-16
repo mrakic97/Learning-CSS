@@ -1,0 +1,45 @@
+div {
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+}
+
+#static #middle {
+    background-color: #A9BCD0;
+    position: static;
+    top: 100px;
+}
+
+#relative #middle { 
+    background-color: #A9BCD0;
+    position: relative;
+    top: 80px;
+    left: 40px;
+}
+/* ovo izdize element sloj iznad i ako stavimo top:10px pomera ga 10px dole */
+
+#absolute #middle {
+    background-color: #A9BCD0;
+    position: absolute;
+    right: -50px;
+}
+/* izdize element iznad i pomera ga u odnosnu na njegov predak, u ovom slucaju div middle u odnosu 
+na njegov section */
+
+#fixed #middle {
+    background-color: #A9BCD0;
+    position: fixed;
+    top: 200px;
+    left: 350px;
+}
+ /* Gde fixiras element on tu stoji i prati tu poziciju u odnosu inicijalni blok(body) cak i kad skrolujes */
+
+#sticky #middle {
+    background-color: #A9BCD0;
+    position: sticky;
+    top: 20px;
+} 
+ /* Zalepi se za 20px od vrha parent-ove gornje ivice, nije odmah fixiran kao fixed properti */
